@@ -1,0 +1,91 @@
+[0m11:43:41.892239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274D4102CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274D6546C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274D6546B80>]}
+
+
+============================== 11:43:41.900240 | 54e63f9a-6c48-4aa0-859b-ed893683a93d ==============================
+[0m11:43:41.900240 [info ] [MainThread]: Running with dbt=1.6.3
+[0m11:43:41.900648 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ws_htu1000\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init demo', 'send_anonymous_usage_stats': 'True'}
+[0m11:43:41.901708 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/ws_htu1000/.dbt')}
+[0m11:43:41.902473 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:43:41.903317 [debug] [MainThread]: Starter project path: c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\include\starter_project
+[0m11:43:41.920316 [info ] [MainThread]: 
+Your new dbt project "demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:43:41.921315 [info ] [MainThread]: Setting up your profile.
+[0m17:01:23.460448 [error] [MainThread]: Encountered an error:
+
+[0m17:01:23.500345 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 308, in run
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 113, in generate_target_from_input
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m17:01:23.506390 [debug] [MainThread]: Command `dbt init` failed at 17:01:23.505300 after 19061.61 seconds
+[0m17:01:23.510384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274D4102CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274E62FD2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000274E62FD310>]}
+[0m17:01:23.515305 [debug] [MainThread]: Flushing usage events
+[0m17:01:24.389996 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:01:34.382193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024499622C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002449BA65BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002449BA65B50>]}
+
+
+============================== 17:01:34.390931 | a23618a4-c8d2-43a4-9877-c3ed1d14c5c5 ==============================
+[0m17:01:34.390931 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:01:34.391967 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\ws_htu1000\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init demo', 'send_anonymous_usage_stats': 'True'}
+[0m17:01:34.394930 [info ] [MainThread]: A project called demo already exists here.
+[0m17:01:34.395930 [debug] [MainThread]: Command `dbt init` succeeded at 17:01:34.394930 after 0.02 seconds
+[0m17:01:34.395930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024499622C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002449BA79D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002449BA79F70>]}
+[0m17:01:34.395930 [debug] [MainThread]: Flushing usage events
+[0m17:01:46.728945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AEF325C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AF1785B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AF1785B20>]}
+
+
+============================== 17:01:46.735013 | c74e3c26-d7ed-4509-8966-1bebbe1a43f2 ==============================
+[0m17:01:46.735013 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:01:46.735013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\ws_htu1000\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init demo_1', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:01:46.736942 [debug] [MainThread]: Starter project path: c:\users\ws_htu1000\appdata\local\programs\python\python38\lib\site-packages\dbt\include\starter_project
+[0m17:01:46.779976 [info ] [MainThread]: 
+Your new dbt project "demo_1" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:01:46.780941 [info ] [MainThread]: Setting up your profile.
+[0m17:04:12.087059 [info ] [MainThread]: Profile demo_1 written to C:\Users\ws_htu1000\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:04:12.088061 [debug] [MainThread]: Command `dbt init` succeeded at 17:04:12.088061 after 145.36 seconds
+[0m17:04:12.089060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AEF325C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AF1799D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028AF1799EB0>]}
+[0m17:04:12.089060 [debug] [MainThread]: Flushing usage events
